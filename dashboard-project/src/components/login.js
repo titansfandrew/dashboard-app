@@ -94,7 +94,7 @@ function Login() {
     return (
       <>
          <div style={headerStyle}>
-            <div style={{"text-align":"left", "color":"white"}}> 
+            <div style={{"text-align":"left"}}> 
                <Link to="/">Homepage</Link> 
             </div>
             
