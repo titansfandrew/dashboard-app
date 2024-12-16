@@ -99,8 +99,11 @@ function Login() {
             </div>
             
          </div>
-         <div style={{"text-align":"center"}}>
-            <h2>Login</h2>
+         <div style={{"text-align":"center",}}>
+            <div style={{"background-color":"#e5e5e5"}}>
+               <h2>Login</h2>
+               <p></p>
+            </div>
             <div>
                <span>* username: </span><input ref={txtusername} type="text" maxLength={20} placeholder="* username required"/> <br/>
                <span>* password: </span><input ref={txtpassword} type="password" maxLength={30} placeholder="* password required"/> <br/>
