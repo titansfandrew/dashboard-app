@@ -14,13 +14,13 @@ function Login() {
       let _msg = "";
 
       const _username = txtusername.current.value;
-      const _passsword = txtpassword.current.value; //optionally: encrypt password
+      const _password = txtpassword.current.value; //optionally: encrypt password
 
       //## for local testing use localhst url
-      const _localhost_url = `http://localhost:8080/login/${_username}/${_passsword}`;
+      const _localhost_url = `http://localhost:8080/login/${_username}/${_password}`;
 
       //## when publishing code to github pages use replit url 
-      const _replit_url = `https://d4a4b615-8c0c-4341-adae-e90a82bcb576-00-2xx2fade5wfsh.worf.replit.dev/login/${_username}/${_passsword}`;
+      const _replit_url = `https://243bc221-a55b-49c4-90e4-cc1f1b814855-00-2o8p7mtr1we53.janeway.replit.dev/login/${_username}/${_password}`;
 
       try {
       
