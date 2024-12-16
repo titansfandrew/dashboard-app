@@ -59,7 +59,7 @@ function Register() {
          setMsg(_msg)
 
          const _localhost_url = `http://localhost:8080/register`;  
-         const _replit_url = `https://d4a4b615-8c0c-4341-adae-e90a82bcb576-00-2xx2fade5wfsh.worf.replit.dev/register`;  
+         const _replit_url = `https://6eb7e42b-bdbb-4373-9a7e-9522f24632c2-00-264ls97syup32.worf.replit.dev/register`;  
            
          const _post_data = {username:txtusername.current.value.trim(), password:txtpassword.current.value.trim()};
    
