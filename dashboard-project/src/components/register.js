@@ -3,6 +3,15 @@ import { useState, useRef } from "react";
 
 function Register() {
 
+   const headerStyle = {
+ 
+      backgroundColor:"#e5e5e5",
+      padding:"15px",
+      textAlign:"center",
+      alignItems: "center",
+      justifyContent: "center"
+    }
+
    const [msg,setMsg] = useState("");
    const txtusername = useRef("");
    const txtpassword = useRef("");
@@ -100,20 +109,26 @@ function Register() {
 
     return (
       <>
-         <h2>Register</h2>
-         <div>
-            <span>* username: </span><input ref={txtusername} type="text" maxLength={20} placeholder="* username required"/> <br/>
-            <span>* password: </span><input ref={txtpassword} type="password" maxLength={10} placeholder="* password required"/> <br/>
-            <span>* confirm password: </span><input ref={txtconfirmpassword} type="password" maxLength={10} placeholder="* confirm password required"/> <br/>
+         <div style={{"text-align":"center"}}>
+            <div style={headerStyle}>
+               <h2>Register</h2>
+            </div>
             <p></p>
-            <input ref={chkterms} type="checkbox"/> <span> Terms and Services</span>
-            <p>{msg}</p>
-            <p></p>
-            <button onClick={handleRegister}>register</button>
-        </div>         
-         <p>
-            <Link to="/login">login</Link>
-         </p>    
+            <br></br>
+            <div>
+               <span>* username: </span><input ref={txtusername} type="text" maxLength={20} placeholder="* username required"/> <br/>
+               <span>* password: </span><input ref={txtpassword} type="password" maxLength={10} placeholder="* password required"/> <br/>
+               <span>* confirm password: </span><input ref={txtconfirmpassword} type="password" maxLength={10} placeholder="* confirm password"/> <br/>
+               <p></p>
+               <input ref={chkterms} type="checkbox"/> <span> Terms and Services</span>
+               <p>{msg}</p>
+               <p></p>
+               <button onClick={handleRegister}>register</button>
+            </div>         
+            <p>
+               <p>Already have an account? <Link to="/login">Login</Link></p>
+            </p>   
+         </div> 
       </>
     );
   }
