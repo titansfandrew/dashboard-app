@@ -1,7 +1,17 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useRef } from "react";
+import "./../login.css";
 
 function Login() {
+
+   const headerStyle = {
+ 
+      backgroundColor:"#e5e5e5",
+      padding:"15px",
+      textAlign:"center",
+      alignItems: "center",
+      justifyContent: "center"
+    }
 
    const [msg,setMsg] = useState("");
    const txtusername = useRef("");
@@ -83,20 +93,27 @@ function Login() {
 
     return (
       <>
-         <h2>Login</h2>
-         <div>
-            <span>* username: </span><input ref={txtusername} type="text" maxLength={20} placeholder="* username required"/> <br/>
-            <span>* password: </span><input ref={txtpassword} type="password" maxLength={30} placeholder="* password required"/> <br/>
-            <p>{msg}</p>
-            <p></p>
-            <button onClick={handleLogin}>login</button>
-        </div>
-         <p>
-            <Link to="/">Home</Link>
-         </p>  
-         <p>
-            <Link to="/register">register</Link>
-         </p>         
+         <div style={headerStyle}>
+            <div style={{"text-align":"left", "color":"white"}}> 
+               <Link to="/">Homepage</Link> 
+            </div>
+            
+         </div>
+         <div style={{"text-align":"center"}}>
+            <h2>Login</h2>
+            <div>
+               <span>* username: </span><input ref={txtusername} type="text" maxLength={20} placeholder="* username required"/> <br/>
+               <span>* password: </span><input ref={txtpassword} type="password" maxLength={30} placeholder="* password required"/> <br/>
+               <p>{msg}</p>
+               <p></p>
+               <button onClick={handleLogin}>login</button>
+               <p></p>
+            <div style={{"text-align":"center"}}>
+               <p>Don't have an account? <Link to="/register">Register now</Link></p>
+               
+            </div>
+            </div>
+         </div>         
       </>
     );
   }
