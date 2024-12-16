@@ -1,3 +1,25 @@
+### Website project title Title 
+    Dashboard App
+### Website Descrition/Overview   
+    The site will have a register/login page, a home page, and a dashboard.
+### Details on how to use it or what functionality is offered
+    There will be a navigation bar that goes between each page. Each page will have its desired function.
+### project Author
+    Drew Dulaney
+[github repo url](https://github.com/titansfandrew/dashboard-app/tree/main/dashboard-project)
+
+[github pages website url](https://titansfandrew.github.io/dashboard-app/#/)
+
+#### Website Technologies used
+- html
+- css
+- javascript
+
+#### future enhancements/imporvements 
+- A better layout for pages
+- A better use for dashboard
+- Different functionalities once logged in
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
