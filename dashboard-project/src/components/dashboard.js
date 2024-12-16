@@ -49,7 +49,7 @@ function Dashboard() {
                <div className="menu">
                <a href="/" onClick={(e)=>handleLinkClick(e,0)}>Github to this Project</a>
                <a href="/" onClick={(e)=>handleLinkClick(e,1)}>Random Website Generator</a>
-               <a href="/" onClick={(e)=>handleLinkClick(e,2)}>Radnom Fact Generator</a>
+               <a href="/" onClick={(e)=>handleLinkClick(e,2)}>Random Fact Generator</a>
                <a href="/" onClick={(e)=>handleLinkClick(e,3)}>Github Backend API</a>
             </div>
                
