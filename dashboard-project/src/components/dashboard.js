@@ -18,7 +18,7 @@ function Dashboard() {
 
    const handleLinkClick = (e,index) =>{
       e.preventDefault()
-      const items = ["item one","item two", "item three", "item 4", "item 5", "item 6", "item 7", "item 8"]
+      const items = ["https://github.com/titansfandrew/dashboard-app/tree/main/dashboard-project","https://theuselessweb.com/", "https://www.randomfactgenerator.com/", "https://github.com/titansfandrew/project-backend-api", "item 5", "item 6", "item 7", "item 8"]
       setMsg(items[index])
    }
 
@@ -28,7 +28,7 @@ function Dashboard() {
                <div style={{"display":"flex"}}>
                   <h1 style={{"width":"60%", "text-align":"right"}}>Dashboard</h1>
                      <span style={{"width":"40%","text-align":"right"}}>
-                        <span>Welcome </span>
+                        <span>Goodbye! </span>
                         <Link to="/login">logout</Link>
                      </span>
                </div>
@@ -36,28 +36,27 @@ function Dashboard() {
 
          <div style={{overflow:"auto"}}>
             <div className="menu">
-            <a href="/" onClick={(e)=>handleLinkClick(e,0)}>Link 1</a>
-            <a href="/" onClick={(e)=>handleLinkClick(e,1)}>Link 2</a>
-            <a href="/" onClick={(e)=>handleLinkClick(e,2)}>Link 3</a>
-            <a href="/" onClick={(e)=>handleLinkClick(e,3)}>Link 4</a>
-            <a href="/" onClick={(e)=>handleLinkClick(e,4)}>Link 5</a>
+            <a href="/" onClick={(e)=>handleLinkClick(e,0)}>Github to this Project</a>
+            <a href="/" onClick={(e)=>handleLinkClick(e,1)}>Random Website Generator</a>
+            <a href="/" onClick={(e)=>handleLinkClick(e,2)}>Radnom Fact Generator</a>
+            <a href="/" onClick={(e)=>handleLinkClick(e,3)}>Github Backend API</a>
          </div>
 
          <div className="main">
-            <h2>Lorum Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <h2>Hello There!</h2>
+            <p>In this dashboard there will be a couple links, some to the github for this project and some fun ones. (Will have to copy links)</p>
             {msg}
          </div>
 
          <div className="right">
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <p>This is a dashboard.</p>
+            <p>Here you can navigate through some different links.</p>
             </div>
          </div>
          <p></p>
          <div style={{"background-color":"#e5e5e5","text-align":"center","padding":"10px","margin-top":"7px;"}}>
-               footer
+               Welcome!
          </div>
 
       </>
