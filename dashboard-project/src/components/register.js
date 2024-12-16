@@ -6,7 +6,7 @@ function Register() {
    const headerStyle = {
  
       backgroundColor:"#e5e5e5",
-      padding:"15px",
+      padding:"5px",
       textAlign:"center",
       alignItems: "center",
       justifyContent: "center"
@@ -115,7 +115,7 @@ function Register() {
             </div>
             <p></p>
             <br></br>
-            <div>
+            <div style={{"background-color":"#e5e5e5"}}>
                <span>* username: </span><input ref={txtusername} type="text" maxLength={20} placeholder="* username required"/> <br/>
                <span>* password: </span><input ref={txtpassword} type="password" maxLength={10} placeholder="* password required"/> <br/>
                <span>* confirm password: </span><input ref={txtconfirmpassword} type="password" maxLength={10} placeholder="* confirm password"/> <br/>
