@@ -20,7 +20,7 @@ function Login() {
       const _localhost_url = `http://localhost:8080/login/${_username}/${_password}`;
 
       //## when publishing code to github pages use replit url 
-      const _replit_url = `https://243bc221-a55b-49c4-90e4-cc1f1b814855-00-2o8p7mtr1we53.janeway.replit.dev/login/${_username}/${_password}`;
+      const _replit_url = `https://6eb7e42b-bdbb-4373-9a7e-9522f24632c2-00-264ls97syup32.worf.replit.dev/login/${_username}/${_password}`;
 
       try {
       
@@ -86,7 +86,7 @@ function Login() {
          <h2>Login</h2>
          <div>
             <span>* username: </span><input ref={txtusername} type="text" maxLength={20} placeholder="* username required"/> <br/>
-            <span>* password: </span><input ref={txtpassword} type="password" maxLength={10} placeholder="* password required"/> <br/>
+            <span>* password: </span><input ref={txtpassword} type="password" maxLength={30} placeholder="* password required"/> <br/>
             <p>{msg}</p>
             <p></p>
             <button onClick={handleLogin}>login</button>
