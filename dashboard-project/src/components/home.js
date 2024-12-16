@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
+import "./../home.css";
 
 function Home() {
     return (
       <>
-         <h2>Dashboard App</h2>
-         <p>
-            <Link to="/login">Login</Link>
-         </p>
+         <div style={{"text-align":"center"}}>
+            <h2>Welcome to my dashboard app.</h2>
+            <p>
+               <Link to="/login">Go to login page</Link>
+            </p>
+         </div>
       </>
     );
   }
